@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>SICEFA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="OPENTECH">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/styleGlobal.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-colapsed-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="../sucursal/homeSucursal.html">SICEFA SUCURSAL</a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#menuLateral" style="background-color: #354f52;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="sidebar offcanvas offcanvas-start" id="menuLateral" tabindex="-1"
+                style="background-color: #2D2C2C ;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel" style="color:white; font-weight: bold;">
+                        SICEFA Sucursal</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+                    <ul class="navbar-nav fs-5 justify-content-evenly">
+                        <li class="nav-item item p-2 py-md-1">
+                            <a class="nav-link" onclick="cargarModuloEmpleados();">Empleados</a>
+                        </li>
+                        <li class="nav-item item p-2 py-md-1">
+                            <a class="nav-link" onclick="cargarModuloProductos();">Productos</a>
+                        </li>
+                        <li class="nav-item item p-2 py-md-1">
+                            <div onclick="cargarModuloPedidosCentral();" class="nav-link">
+                                Pedidos</div>
+                        </li>
+                        <li class="nav-item  item p-2 py-md-1">
+                            <div onclick="cargarModuloClientes();" class="nav-link">
+                                Clientes</div>
+                        </li>
+                        <li class="nav-item item p-2 py-md-1">
+                            <div onclick="cargarModuloSucursales();" class="nav-link">
+                                Sucursales</div>
+                        </li>
+                        <li class="nav-item item p-2 py-md-1">
+                            <div onclick="cargarModuloVenta();" class="nav-link">
+                                Ventas</div>
+                        </li>
+                        <li class="nav-item item p-2 py-md-1">
+                            <a href="../central/homeCentral.html" class="nav-link">
+                                Ir a SICEFA Central</a>
+                        </li>
+                        <li class="nav-item item p-2 py-md-1">
+                            <a href="../index.html" class="nav-link">
+                                Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </section>
+
+    </nav>
+
+    <div class="container-fluid">
+        <div class="container-fluid" id="contenedorPrincipal">
+            <div>
+                <h1 style="color: #354f52; margin-left: 10%; margin-top: 4%; margin-bottom: 4%;">SICEFA Sucursal</h1>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem; background-color: #dad7cd;">
+                            <h2 style=" color: #354f52; margin-top: 5%; text-align: center;">Sobre nosotros</h2>
+                            <img class="card-img-top" src="../image1Sucursal.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text" style="margin-top: 2%;  text-align: justify;">En Medicamos Tu Vida,
+                                    nos enorgullecemos de ser mucho más que una empresa farmaeutica.
+                                    Somos un equipo dedicado a brindar un servicio excepcional al cliente, poniendo a
+                                    las personas en el centro de todo lo que hacemos. Nuestra filosofí­a se basa en la
+                                    empatía,
+                                    la escucha activa y la entrega de soluciones farmaceuticas que superen las
+                                    expectativas de nuestros clientes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem; background-color: #dad7cd;">
+                            <h2 style=" color: #354f52; margin-top: 5%; text-align: center;">Misión</h2>
+                            <img class="card-img-top" src="../image2Sucursal.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text" style="margin-top: 2%;  text-align: justify;">En Medicamos Tu Vida,
+                                    nos enorgullecemos de ser mucho más que una empresa farmacéutica.
+                                    Somos un equipo dedicado a brindar un servicio excepcional al cliente, poniendo a
+                                    las personas en el centro de todo lo que hacemos.
+                                    Nuestra filosofí­a se basa en la empatía, la escucha activa y la entrega de
+                                    soluciones farmacéuticas que superen las expectativas de nuestros clientes</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem; background-color: #dad7cd;">
+                            <h2 style=" color: #354f52; margin-top: 5%; text-align: center;">Visión</h2>
+                            <img class="card-img-top" src="../image3Sucursal.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text" style="margin-top: 2%;  text-align: justify;">Nos esforzamos por
+                                    anticiparnos a las necesidades cambiantes de nuestros clientes y adaptar nuestros
+                                    servicios para superar sus expectativas.
+                                    Buscamos innovar en nuestros canales de comunicación y procesos para ofrecer una
+                                    experiencia del cliente sin igual, donde cada interacción sea un ejemplo de calidez
+                                    y eficiencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- <nav class="navbar navbar-colapsed-lg" style="background-color: #2D2C2C ;">
+            <div class="container-fluid">
+                <p class="navbar-brand fw-semibold fs-4 p-3" style="color: #6DC337 ;"><i class="fa-solid fa-pills"></i>
+                    Medicamos tu vida</p>
+                <p class="navbar-brand fw-semibold fs-4 p-3" style="color: #6DC337 ;"><i class="fa-solid fa-pills"></i>
+                    SICEFA Sucursal</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"
+                    style="background-color: #6DC337;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1"
+                    style="background-color: #2D2C2C ;">
+                    <div class="offcanvas-header" data-bs-theme="dark">
+                        <h5 class="offcanvas-title" style="color: #6DC337 ;"> <i class="fa-solid fa-house"></i> HOME
+                        </h5>
+                        <button class="btn-close" type="button" aria-label="close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+                        <ul class="navbar-nav fs-5 justify-content-evenly">
+                            <li class="nav-item p-2 py-md-1">
+                                <div onclick="cargarModuloEmpleados();" class="nav-link" style="color: #6DC337 ;">
+                                    Empleados</div>
+                            </li>
+                            <li class="nav-item p-2 py-md-1">
+                                <div onclick="cargarModuloClientes();" class="nav-link" style="color: #6DC337 ;">
+                                    Clientes</div>
+                            </li>
+                            <li class="nav-item p-2 py-md-1">
+                                <a class="nav-link" style="color: #6DC337 ;">Venta</a>
+                            </li>
+                            <li class="nav-item p-2 py-md-1">
+                                <a class="nav-link" style="color: #6DC337 ;">Inventario</a>
+                            </li>
+                            <li class="nav-item p-2 py-md-1">
+                                <div onclick="cargarModuloPedidos();" class="nav-link" style="color: #6DC337 ;">
+                                    Pedidos de compra</div>
+                            </li>
+                            <li class="nav-item p-2 py-md-1">
+                                <a href="homeCentral.html" class="nav-link" style="color: #6DC337 ;">
+                                    SICEFA Central</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </nav> -->
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/5b2670a1a9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

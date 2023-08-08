@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1",
+        "empleado": {
+            "id": "1",
+            "nombre": "Empleado 1",
+            "apellido_paterno": "Apellido Paterno 1",
+            "apellido_materno": "Apellido Materno 1",
+            "fecha_nacimiento": "2020-01-01",
+            "estado": "pendiente",
+            "fechaCreacion": "2020-01-01"
+        },
+        "sucursal": {
+            "id": "1",
+            "nombre": "Sucursal 1",
+            "ciudad": "Ciudad 1",
+            "estado": "guanajuato",
+            "pais": "Mexico",
+            "codigo_postal": "12345",
+            "telefono": "1234567890"
+        },
+        "estado": "pendiente",
+        "fechaCreacion": "2020-01-01",
+        "productos": [
+            {
+                "id": "1",
+                "nombre": "Producto 1",
+                "descripcion": "Descripcion 1",
+                "precio": "100.00",
+                "estado": "pendiente",
+                "fechaCreacion": "2020-01-01",
+                "unidades": "2"
+            },
+            {
+                "id": "2",
+                "nombre": "Producto 2",
+                "descripcion": "Descripcion 2",
+                "precio": "200.00",
+                "estado": "pendiente",
+                "fechaCreacion": "2020-01-01",
+                "unidades": "5"
+            },
+            {
+                "id": "1",
+                "nombre": "Producto3",
+                "descripcion": "Descripcion 1",
+                "precio": "100.00",
+                "estado": "pendiente",
+                "fechaCreacion": "2020-01-01",
+                "unidades": "2"
+            },
+            {
+                "id": "2",
+                "nombre": "Producto 4",
+                "descripcion": "Descripcion 2",
+                "precio": "200.00",
+                "estado": "pendiente",
+                "fechaCreacion": "2020-01-01",
+                "unidades": "5"
+            },
+            {
+                "id": "1",
+                "nombre": "Producto 5",
+                "descripcion": "Descripcion 1",
+                "precio": "100.00",
+                "estado": "pendiente",
+                "fechaCreacion": "2020-01-01",
+                "unidades": "2"
+            }
+        ]
+    }
+]

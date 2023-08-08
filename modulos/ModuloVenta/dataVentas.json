@@ -1,0 +1,62 @@
+[
+  {
+    "empleado": "Marina López",
+    "cliente": "Arnulfo Gama Saucedo",
+    "producto": "Etambutol",
+    "estatus": "Activo",
+    "fecha": "2020/12/12",
+    "hora": "12:30",
+    "precio": "300",
+    "productoVendido": "paracetamol",
+    "idVenta": "12",
+    "cantidad": "30"
+  },
+  {
+    "empleado": "Juan Perez",
+    "cliente": "Cristian Martinolli Curi",
+    "producto": "Efavirenz",
+    "estatus": "Activo",
+    "fecha": "2020/12/12",
+    "hora": "12:30",
+    "precio": "300",
+    "productoVendido": "paracetamol",
+    "idVenta": "124",
+    "cantidad": "29"
+  },
+  {
+    "empleado": "Sandra Echeverria",
+    "cliente": "Susana Madrid Gutierrez",
+    "producto": "Ciprofibrato",
+    "estatus": "Activo",
+    "fecha": "2020/12/12",
+    "hora": "12:30",
+    "precio": "300",
+    "productoVendido": "paracetamol",
+    "idVenta": "112",
+    "cantidad": "28"
+  },
+  {
+    "empleado": "Juliana Sanchez",
+    "cliente": "Mariana Santibañez Mori",
+    "producto": "Lidocaina",
+    "estatus": "Activo",
+    "fecha": "2020/12/12",
+    "hora": "12:30",
+    "precio": "300",
+    "productoVendido": "paracetamol",
+    "idVenta": "122",
+    "cantidad": "26"
+  },
+  {
+    "empleado": "Miguel Sanchez",
+    "cliente": "Alondra Gutierrez Perez",
+    "producto": "Lidocaina",
+    "estatus": "Activo",
+    "fecha": "2020/12/12",
+    "hora": "12:30",
+    "precio": "300",
+    "productoVendido": "paracetamol",
+    "idVenta": "152",
+    "cantidad": "30"
+  }
+]

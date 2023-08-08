@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SICEFA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <meta name="description" content="SICEFA">
+    <meta name="keywords" content="Proyecto integrador">
+    <meta name="author" content="Yosselin Maria Gutierrez Muñoz, Carlos Eduardo Paredes Soto">
+    <link rel="stylesheet" href="/styles/styleGlobal.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <section class="container">
+            <form>
+                <h1 class="title">
+                    Gestión de productos </h1>
+                <div class="subtitle mb-3 mt-5">
+                    <h5>Datos </h5>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class=" form-control" name="txtNombre" id="txtNombre"
+                                    placeholder="Nombre"><br>
+                                <input type="text" class=" form-control" name="txtFormaF" id="txtFormaF"
+                                    placeholder="Forma farmaceútica"><br>
+                                <input type="text" class=" form-control" name="txtPres" id="txtPres"
+                                    placeholder="Presentación"><br>
+                                <input type="text" class=" form-control" name="txtCodBar" id="txtCodBar"
+                                    placeholder="Código de barras"><br>
+                                <input type="text" class=" form-control" name="txtPrecioCom" id="txtPrecioCom"
+                                    placeholder="Precio de compra"><br>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class=" form-control" name="txtNomGen" id="txtNomGen"
+                                    placeholder="Nombre genérico"><br>
+                                <input type="text" class=" form-control" name="txtUniMed" id="txtUniMed"
+                                    placeholder="Unidad de medida"><br>
+                                <input type="text" class=" form-control" name="txtUniEnv" id="txtUniEnv"
+                                    placeholder="Unidades por envase"><br>
+                                <input type="text" class=" form-control" name="txtConcen" id="txtConcen"
+                                    placeholder="Concentración"><br>
+                                <input type="text" class=" form-control" name="txtPrecioVen" id="txtPrecioVen"
+                                    placeholder="Precio de venta"><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <textarea class=" form-control" name="txtPrinIndi" id="txtPrinIndi" cols="5" rows="6"
+                            placeholder="Principal indicación"></textarea><br>
+                        <textarea class=" form-control" name="txtContra" id="txtContra" cols="5" rows="6"
+                            placeholder="Contradicciones"></textarea><br>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="#" alt="Imagen Seleccionada" class="img-thumbnail bg-transparent" id="previewImage"
+                            style="display:none;">
+                        <input type="file" class=" form-control" id="imageInput">
+                    </div>
+                </div>
+
+                <!--botones-->
+                <div class="d-flex justify-content-center">
+                    <button type="button" id="btnAdd" onclick="moduloProductos.addProducto();"
+                        class="btn btn-success">Registrar <i class="fa-solid fa-pen-to-square"
+                        style="color: #ffffff;"></i></button>
+                    <button type="button" id="btnDelete" onclick="moduloProductos.deleteProducto();"
+                        class="btn btn-success disabled">Eliminar <i class="fa-solid fa-trash"
+                        style="color: #ffffff;"></i></button>
+                    <button type="button" id="btnUpdate" onclick="moduloProductos.updateProducto();"
+                        class="btn btn-success disabled">Actualizar <i class="fa-solid fas fa-history" style="color: #ffffff;"></i></button>
+                    <button type="button" id="btnClean" onclick="moduloProductos.clean();" class="btn btn-success">Limpiar
+                        <i class="fa-solid fa-broom" style="color: #ffffff;"></i></button>
+                </div>
+            </form><br><br><br>
+        </section>
+        <!--Tabla-->
+        <section class="container">
+            <div class="row">
+                <div class="subtitle mb-3 mt-5">
+                    <h5>Productos existentes </h5>
+
+                </div>
+                <div class="col-sm-4 d-flex flex-row">
+                    <input class=" form-control border border-dark rounded-0" type="text" name="txtBusqueda"
+                        id="txtBusquedaProducto" placeholder="Buscar Productos">
+                    <button type="button" id="btnBusquedaProducto" onclick="moduloProductos.searchProducto();"
+                        class="btn btn-success">Buscar <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+
+                </div>
+                <section class="container">
+                    <div class="table-responsive">
+                        <table class="table m-3">
+                            <thead>
+                                <tr>
+                                    <th class="p-2" scope="col">ID</th>
+                                    <th class="p-2" scope="col">Nombre</th>
+                                    
+                                    <th class="p-2" scope="col">Forma farmaceútica</th>
+                                    
+                                    <th class="p-2" scope="col">Presentación</th>
+                                    
+                                    
+                                    <th class="p-2" scope="col">Concentración</th>
+                                    <th class="p-2" scope="col">Unidades por envase</th>
+                                    <th class="p-2" scope="col">Precio de compra</th>
+                                    <th class="p-2" scope="col">Precio de venta</th>
+                                    <th class="p-2" scope="col">Ruta de foto</th>
+                                    
+                                    <th class="p-2" scope="col">Estatus</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tblProductos">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/5b2670a1a9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../../js/funciones.js"></script>
+</body>
+
+</html>

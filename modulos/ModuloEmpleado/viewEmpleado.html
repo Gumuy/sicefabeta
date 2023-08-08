@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SICEFA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <meta name="description" content="SICEFA">
+    <meta name="keywords" content="Proyecto integrador">
+    <meta name="author" content="Yosselin Maria Gutierrez Muñoz, Carlos Eduardo Paredes Soto">
+    <link rel="stylesheet" href="/styles/styleGlobal.css">
+
+
+</head>
+
+<body>
+
+    <!--Formulario-->
+    <div class="">
+
+
+        <section class="container mt-3">
+            <form>
+                <h1 class="title">
+                    Registro Empleados
+                </h1>
+
+
+                <div class="row mt-4">
+                    <div class="subtitle mb-3">
+                        <h5>Datos personales</h5>
+                    </div>
+                    <div class="row mb">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class=" form-control" name="txtNombre" id="txtNombre"
+                                    placeholder="Nombre(s)">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtPa" id="txtPa"
+                                    placeholder="Primer apellido">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtPm" id="txtPm"
+                                    placeholder="Segundo apellido">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+
+                                <select name="txtGenero" class=" form-select " id="txtGenero"><br>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtFechNac" id="txtFechNac"
+                                    placeholder="Fecha de nacimiento">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtCurp" id="txtCurp"
+                                    placeholder="CURP">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb mt-3">
+
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtDomicilio" id="txtDomicilio"
+                                    placeholder="Domicilio">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtCodigoPos" id="txtCodigoPos"
+                                    placeholder="Codigo postal">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtCiudad" id="txtCiudad"
+                                    placeholder="Ciudad">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <select name="txtEstado" class=" form-select " id="txtEstado"><br>
+                                    <option value="AGUASCALIENTES">AGUASCALIENTES</option>
+                                    <option value="BAJA CALIFORNIA">BAJA CALIFORNIA</option>
+                                    <option value="BAJA CALIFORNIA SUR">BAJA CALIFORNIA SUR</option>
+                                    <option value="CAMPECHE">CAMPECHE</option>
+                                    <option value="COAHUILA">COAHUILA</option>
+                                    <option value="COLIMA">COLIMA</option>
+                                    <option value="CHIAPAS">CHIAPAS</option>
+                                    <option value="CHIHUHUA">CHIHUHUA</option>
+                                    <option value="DISTRITO FEDERA">DISTRITO FEDERAL</option>
+                                    <option value="DURANGO">DURANGO</option>
+                                    <option value="GUANAJUATO">GUANAJUATO</option>
+                                    <option value="GUERRERO">GUERRERO</option>
+                                    <option value="HIDALGO">HIDALGO</option>
+                                    <option value="JALISCO">JALISCO</option>
+                                    <option value="MEXICO">MEXICO</option>
+                                    <option value="MICHOACAN">MICHOACAN</option>
+                                    <option value="MORELOS">MORELOS</option>
+                                    <option value="NAYARIT">NAYARIT</option>
+                                    <option value="NUEVO LEON">NUEVO LEON</option>
+                                    <option value="OAXACA">OAXACA</option>
+                                    <option value="PUEBLA">PUEBLA</option>
+                                    <option value="QUERETARO">QUERETARO</option>
+                                    <option value="QUINTANA ROO">QUINTANA ROO</option>
+                                    <option value="SAN LUIS POTOSI">SAN LUIS POTOSI</option>
+                                    <option value="SINALOA">SINALOA</option>
+                                    <option value="SONORA">SONORA</option>
+                                    <option value="TABASCO">TABASCO</option>
+                                    <option value="TAMAULIPAS">TAMAULIPAS</option>
+                                    <option value="TLAXCALA">TLAXCALA</option>
+                                    <option value="VERACRUZ">VERACRUZ</option>
+                                    <option value="YUCATAN">YUCATAN</option>
+                                    <option value="ZACATECAS">ZACATECAS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtTel" id="txtTel"
+                                    placeholder=" Telefono">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="subtitle mb-3 mt-5">
+                        <h5>Informacion laboral</h5>
+
+                    </div>
+                    <div class="row mb">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtRFC" id="txtRFC" placeholder="RFC">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtEmail" id="txtEmail"
+                                    placeholder="email">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtSalario" id="txtSalario"
+                                    placeholder="Salario bruto mensual">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="bgG form-control" name="txtPuesto" id="txtPuesto"
+                                    placeholder="Puesto">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="date" class="bgG form-control" name="dateFechaIngreso"
+                                    placeholder="Fecha de ingreso" id="dateFechaIngreso">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+                    <div class="col-5">
+
+                        <div>
+                            <input type="text" class="bgG form-control" name="txtRFC"
+                                id="txtRFC" placeholder="RFC"><br>
+                            <input type="text" class="bgG form-control" name="txtEmail"
+                                id="txtEmail" placeholder="email"><br>
+                            <input type="text" class="bgG form-control"
+                                name="txtSalario" id="txtSalario" placeholder="Salario bruto mensual"><br>
+                            <input type="text" class="bgG form-control"
+                                name="txtPuesto" id="txtPuesto" placeholder="Puesto"><br>
+                            <input type="date" class="bgG form-control"
+                                name="dateFechaIngreso" placeholder="Fecha de ingreso" id="dateFechaIngreso">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="#" alt="Imagen Seleccionada" class="img-thumbnail" id="previewImage"
+                            style="display:none;">
+                        <input type="file" class="bgG form-control" id="imageInput">
+                    </div> -->
+                </div>
+
+
+
+
+                <!--botones-->
+                <div class="d-flex flex-row mt-4">
+                    <button id="btnAdd" type="button" onclick="moduloEmpleado.addEmpleado()"
+                        class="btn btn-success">Registrar <i class="fa-solid fa-pen-to-square"
+                            style="color: #ffffff;"></i></button>
+
+                    <button type="button" class="btn btn-success disabled" id="btnUpdate"
+                        onclick="moduloEmpleado.deleteempleado()">Eliminar <i class="fa-solid fa-trash"
+                            style="color: #ffffff;"></i></button>
+                    <button type="button" class="btn btn-success disabled" id="btnDelete"
+                        onclick="moduloEmpleado.updateempleado()"> Actualizar
+                        <i class="fa-solid fas fa-history" style="color: #ffffff;"></i>
+                    </button>
+                    <button id="btnClean" type="button" class="btn btn-success" onclick="moduloEmpleado.clean()">Limpiar
+                        <i class="fa-solid fa-broom" style="color: #ffffff;"></i></button>
+                </div>
+            </form><br><br><br>
+        </section>
+        <!--Tabla-->
+        <section class="container">
+            <div class="row">
+                <div class="subtitle mb-3">
+                    <h5>Empleados registrados</h5>
+                </div>
+                <div class="col-sm-4 d-flex flex-row">
+                    <input class=" form-control " type="text" name="txtBusqueda" id="txtBusqueda"
+                        placeholder="Buscar Empleado">
+                    <button type="button" id="btnBusquedaEmpleado" onclick="moduloEmpleados.searchempleado();"
+                        class="btn btn-success">Buscar
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                </div>
+                <section class="container">
+                    <div class="table-responsive">
+                        <table class="table mt-4">
+                            <thead>
+                                <tr>
+                                    <th class="p-2" scope="col">ID</th>
+                                    <th class="p-2" scope="col">Nombre</th>
+                                    <th class="p-2" scope="col">Primer Apellido</th>
+                                    <th class="p-2" scope="col">Segundo apellido</th>
+                                    <th class="p-2" scope="col">Genero</th>
+                                    <th class="p-2" scope="col">Telefono</th>
+                                    <th class="p-2" scope="col">Fecha nacimiento</th>
+                                    <th scope="col" class="p-2">Domicilio</th>
+                                    <th scope="col" class="p-2">RFC</th>
+                                    <th scope="col" class="p-2">Ciudad</th>
+                                    <th scope="col" class="p-2">Estado</th>
+                                    <th scope="col" class="p-2">Codigo postal</th>
+                                    <th scope="col" class="p-2">Sueldo</th>
+                                    <th scope="col" class="p-2">Puesto</th>
+                                    <th scope="col" class="p-2">Fecha de Ingreso</th>
+                                    <th scope="col" class="p-2">Curp</th>
+                                    <th scope="col" class="p-2">Estatus</th>
+
+
+
+                                </tr>
+                            </thead>
+
+                            <tbody id="idContenidoTabla">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </section>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/5b2670a1a9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

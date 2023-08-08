@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SICEFA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <meta name="description" content="SICEFA">
+    <meta name="keywords" content="Proyecto integrador">
+    <meta name="author" content="Yosselin Maria Gutierrez Muñoz, Carlos Eduardo Paredes Soto">
+    <link rel="stylesheet" href="/styles/styleGlobal.css">
+</head>
+
+<body>
+    <!--Formulario-->
+    <div class="container-fluid">
+        <section class="container">
+            <h1 class="title">
+                Detalles del pedido
+            </h1>
+
+            <div class="row mt-4">
+                <div class="col-7">
+                    <div class="mt-5">
+                        <div>
+                            <h3 class="mb-4">Datos</h3>
+                            <div style="display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: row;">
+                                <div style="display: flex;flex-direction: column;justify-content: center;">
+                                    <h5 style="font-weight: bold;">ID de compra</h5>
+                                    <p id="txtId"></p>
+                                </div>
+                                <div style="display: flex;flex-direction: column;justify-content: center;">
+                                    <h5 style="font-weight: bold;">Fecha de compra</h5>
+                                    <p id="txtFecha"></p>
+                                </div>
+                                <div style="display: flex;flex-direction: column;justify-content: center;">
+                                    <h5 style="font-weight: bold;">Sucursal</h5>
+                                    <p id="txtSucursal"></p>
+                                </div>
+                                <div style="display: flex;flex-direction: column;justify-content: center;">
+                                    <h5 style="font-weight: bold;">Empleado</h5>
+                                    <p id="txtNombreEmpleado"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="mb-4">Dirección de la Sucursal</h3>
+                            <div style="display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction: row;">
+                                <div style="display: flex;flex-direction: column;justify-content: center;">
+                                    <h5 style="font-weight: bold;">Ciudad</h5>
+                                    <p id="txtSucCiudad">####</p>
+                                </div>
+                                <div style="display: flex;flex-direction: column;justify-content: center;">
+                                    <h5 style="font-weight: bold;">Estado</h5>
+                                    <p id="txtSucEstado">####</p>
+                                </div>
+                                <div style="display: flex;flex-direction: column;justify-content: center;">
+                                    <h5 style="font-weight: bold;">País</h5>
+                                    <p id="txtSucPais">####</p>
+                                </div>
+                                <div style="display: flex;flex-direction: column;justify-content: center;">
+                                    <h5 style="font-weight: bold;">Código postal</h5>
+                                    <p id="txtSucCP">####</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="mb-4">Productos</h3>
+                            <div class="row row-cols-3" id="idContedorProductos">
+
+
+                                <!-- <div class="col">
+                                    <div class="card" style="width: 10rem; margin: 10px;">
+                                        <img src="https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/7501159580359.jpg?scale=500&qlty=75"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-title">Paracetamol</p>
+                                            <p class="card-text">Unidades: 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 10rem; margin: 10px;">
+                                        <img src="https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/7501159580359.jpg?scale=500&qlty=75"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-title">Paracetamol</p>
+                                            <p class="card-text">Unidades: 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 10rem; margin: 10px;">
+                                        <img src="https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/7501159580359.jpg?scale=500&qlty=75"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-title">Paracetamol</p>
+                                            <p class="card-text">Unidades: 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 10rem; margin: 10px;">
+                                        <img src="https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/7501159580359.jpg?scale=500&qlty=75"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-title">Paracetamol</p>
+                                            <p class="card-text">Unidades: 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 10rem; margin: 10px;">
+                                        <img src="https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/7501159580359.jpg?scale=500&qlty=75"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-title">Paracetamol</p>
+                                            <p class="card-text">Unidades: 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 10rem; margin: 10px;">
+                                        <img src="https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/7501159580359.jpg?scale=500&qlty=75"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-title">Paracetamol</p>
+                                            <p class="card-text">Unidades: 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 10rem; margin: 10px;">
+                                        <img src="https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/7501159580359.jpg?scale=500&qlty=75"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-title">Paracetamol</p>
+                                            <p class="card-text">Unidades: 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 10rem; margin: 10px;">
+                                        <img src="https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/7501159580359.jpg?scale=500&qlty=75"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-title">Paracetamol</p>
+                                            <p class="card-text">Unidades: 1</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-5">
+                    <div style="padding: 0 50px 0 50px;">
+                        <h4>Resumen del pedido</h4>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <p>Subtotal</p>
+                                <p id="txtPrecioSubtotal">$####</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Envío</p>
+                                <p id="txtPrecioEnvio">$####</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Impuestos</p>
+                                <p id="txtPrecioImpuestos">$####</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Total</p>
+                                <p id="txtPrecioTotal">$####</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-success">Atender <i class="fa-solid fa-file-pen"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+        <section class="container">
+            <div class="mt-5">
+                <div class="col-sm-4 d-flex flex-row">
+                    <input class="bgG form-control border border-dark rounded-0" type="text" name="txtBusqueda"
+                        id="txtBusqueda" placeholder="Buscar Productos">
+                    <button type="button" class="btn btn-success">Buscar<i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                </div>
+            </div>
+            <div class="table-responsive mt-3">
+                <div class="subtitle mb-3">
+                    <h5>Todos los pedidos</h5>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID pedido</th>
+                            <th scope="col">Sucursal</th>
+                            <th scope="col">Estatus</th>
+                            <th scope="col">Fecha de pedido</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="idContenedorTabla">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Guadalajara</td>
+                            <td>Enviado</td>
+                            <td>30/07/2023</td>
+                            <td><a href="detailsPedidos.html">Ver pedido</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Zapopan</td>
+                            <td>En proceso</td>
+                            <td>31/07/2023</td>
+                            <td><a href="detailsPedidos.html">Ver pedido</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Tlaquepaque</td>
+                            <td>Entregado</td>
+                            <td>01/08/2023</td>
+                            <td><a href="detailsPedidos.html">Ver pedido</a></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+
+
+        </section>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/5b2670a1a9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/funciones.js"></script>
+</body>
+
+</html>

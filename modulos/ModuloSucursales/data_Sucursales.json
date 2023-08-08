@@ -1,0 +1,68 @@
+[   
+    {
+        "id":1231,
+        "nombre": "SICEFA Central", 
+        "titular": "A", 
+        "codigo_postal" : "37180", 
+        "rfc" : "123", 
+        "ciudad" : "León", 
+        "colonia" : "Futurama Monterrey", 
+        "calle" : "Medano",
+        "telefono" : "4771111111", 
+        "numero" : "209",
+        "estado": "GUANAJUATO",
+        "latitud": "21.15062",
+        "longitud": "-101.68681",
+        "estatus": "Activo"
+    },
+    {
+        "id":1232,
+        "nombre": "SICEFA Centro Max", 
+        "titular": "B", 
+        "codigo_postal" : "37530", 
+        "rfc" : "234", 
+        "ciudad" : "León", 
+        "colonia" : "Jardines de Jerez", 
+        "calle" : "Blvd. Adolfo López Mateos",
+        "telefono" : "4772222222", 
+        "numero" : "2518",
+        "estado": "GUANAJUATO",
+        "latitud": "21.10034",
+        "longitud": "-101.63578",
+        "estatus": "Activo"
+    },
+    {
+        "id":1233,
+        "nombre": "SICEFA Centro", 
+        "titular": "C", 
+        "codigo_postal" : "37000", 
+        "rfc" : "345", 
+        "ciudad" : "León", 
+        "colonia" : "Centro", 
+        "calle" : "Benito Juárez",
+        "telefono" : "4773333333", 
+        "numero" : "101",
+        "estado": "GUANAJUATO",
+        "latitud": "21.12230",
+        "longitud": "-101.68320",
+        "estatus": "Activo"
+    },
+    {
+        "id":1234,
+        "nombre": "SICEFA Plaza Mayor", 
+        "titular": "D", 
+        "codigo_postal" : "37150", 
+        "rfc" : "456", 
+        "ciudad" : "León", 
+        "colonia" : "Valle del Campestre", 
+        "calle" : "Blvd. Juan Alonzo de Torres Pte.",
+        "telefono" : "4774444444", 
+        "numero" : "2002",
+        "estado": "GUANAJUATO",
+        "latitud": "21.15800",
+        "longitud": "-101.69516",
+        "estatus": "Activo"
+    }
+    
+
+]

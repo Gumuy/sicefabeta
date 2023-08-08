@@ -1,0 +1,27 @@
+[    
+    {
+        "nombre": "Juan Luis", 
+        "apellido_paterno": "Hernández", 
+        "apellido_materno" : "Sánchez", 
+        "genero" : "Masculino", 
+        "fecha_nacimiento": "05-03-2002",
+        "domicilio": "valledelroble",
+        "ciudad": "León",
+        "estado":"Guanajuato",
+        "codigo_postal": "37544",
+        "sueldo": "12345",
+        "puesto": "Gerente",
+        "curp": "13458457hfgd",
+        "rfc" : "HSSJ2311977W1", 
+        "telefono" : "4770000123", 
+        "correo_electronico" : "juan_luis@gmail.com", 
+        "id_empleado" : "123445",
+        "estatus": "Activo",
+        "imagen": "urlImagen",
+        "usuario": "",
+        "contrasenia":"",
+        "fechaIngreso":"2023-01-01"
+        
+    }
+
+]
